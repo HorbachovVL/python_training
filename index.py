@@ -93,3 +93,45 @@ print(obj.attr1)
 print(obj.attr2)
 print(Foo.attr1)
 print(obj.foo())
+
+# Списки
+num_list = [22, 13, 444, 16, 1, 215]
+num_list.append(33)
+print(num_list)
+num_list.sort()
+print(num_list)
+num_list.reverse()
+print(num_list)
+print(num_list[2])
+print(num_list[:2])
+num_list[:2] = [99, 'Hello']
+print(num_list)
+num_list[:2] = []
+print(num_list)
+
+
+def sum(a, b):
+    if a < b:
+        return 'Hello'
+    else:
+        return 'Bye'    
+
+print(sum(5, 10))
+
+a = 'aa'
+b = 10
+c = 30
+
+# if a > b and c > b:
+#     print('Yes') 
+# else:
+#     print('No')
+
+if a == 20:
+    print('20')
+elif a == 10:
+    print('10')
+elif a == 30:
+    print('30')
+else:
+    print('Wrong')
