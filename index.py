@@ -135,3 +135,28 @@ elif a == 30:
     print('30')
 else:
     print('Wrong')
+
+# x = input('Enter name')
+# print(x)
+
+def ret(name):
+    return 'Hello ' + name
+
+print(ret('Vova'))
+
+age = 25
+if age < 20:
+    print('age < 20')
+elif age == 25:
+    print('age = 25')
+else:
+    print('age > 20')    
+
+name = 'Vova'
+
+if name is 'Vova':
+    print('Vova')
+elif name is 'Ro':
+    print('Ro')
+else:
+    print('No')
