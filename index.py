@@ -160,3 +160,25 @@ elif name is 'Ro':
     print('Ro')
 else:
     print('No')
+
+# and
+# or
+# not
+# !=
+
+basket = ['Milk', 'Butter', 'Bread', 'Cheese', 'Pasta', 'Salt']
+
+for f in basket [:3]:
+    print(f)
+
+for f in basket:
+    print(len(f))
+
+for f in basket:
+    if f == 'Butter':
+        some = f + ' +'
+        print(some)
+
+for f in range(2, 10):
+    if f % 2 != 0:
+        print(f)
