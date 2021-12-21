@@ -180,5 +180,26 @@ for f in basket:
         print(some)
 
 for f in range(2, 10):
-    if f % 2 != 0:
+    if f % 2 == 0:
         print(f)
+
+print(range(5))
+
+some = list(range(2, 10, 2))
+print(some)
+
+for f in range(12):
+    # print(f)
+    print('Hello')
+
+i = 5
+
+while i >= 1:
+    print(i)
+    i -= 1
+
+i = 0
+
+while i < 5:
+    print(i)
+    i += 1
