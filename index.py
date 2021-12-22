@@ -203,3 +203,35 @@ i = 0
 while i < 5:
     print(i)
     i += 1
+
+def some():
+    print('Some')
+
+some()
+
+def bitcoin_to_usd(btc, curr):
+    amount = btc * curr
+    print(amount)
+
+bitcoin_to_usd(10, 48000)
+bitcoin_to_usd(round(5.312), 48000)
+
+
+a = abs(-3)
+b = max(4, 7, 2, -1, 0)
+print(b)
+print(a)
+
+def square(x):
+    # y = x ** 2
+    return x ** 2
+
+b = square(3)
+print(b)
+
+def some(x):
+    if x % 2 == 0:
+        return 'true'
+    else:
+        return 'false'
+print(some(9))
