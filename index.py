@@ -1,3 +1,27 @@
+# До основних вбудованих типів в Python відносяться:
+
+# 1 None – невизначене значення змінної.
+# 2 Boolean Type – логічний тип. // true false
+# 3 Numeric Type – числа:
+# 3.1 int – ціле число; // 42
+# 3.2 float – число з плаваючою точкою (дійсне число); // 23.44
+# 3.3 complex – комплексне число. // 1j,23.13b
+# 4 Sequence Type – послідовності:
+# 4.1 list – список; // [1, 2, 3]
+# 4.2 tuple – кортеж; // (1, 2, 3)
+# 4.3 range – діапазон.
+# 5 Text Sequence Type – рядки;
+# 5.1 str – рядки. // 'Hello World'
+# 6 Binary Sequence Types – бінарні послідовності:
+# 6.1 bytes – байти;
+# 6.2 bytearray – масиви байт 24;
+# 6.3 memoryview – спеціальні об’єкти для доступу до внутрішніх даних об’єкта через protocol buffer.
+# 7 Set Types – множини:
+# 7.1 set – множина; // {1, 2, 3}
+# 7.2 frozenset – незмінювана множина.
+# 8 Mapping Types – словники:
+# 8.1 dict – словник. // {"name": "Johnny", "second_name": "Walker" }
+
 print('Hello World')
 
 for i in [1, 2, 3]:
@@ -235,3 +259,41 @@ def some(x):
     else:
         return 'false'
 print(some(9))
+
+def gender(sex = 'Undef'):
+    if sex == 'm':
+        sex = 'Male'
+    elif sex == 'f':
+        sex = 'Female'
+    # else:
+    #     sex = 'Unknown'
+    return sex
+
+print(gender())
+
+def caloric_calculator(name, get_calorie, spend_calorie):
+    if get_calorie > spend_calorie:
+        msg = name + 'getting fat'
+    else:
+        msg = name + 'lose weight'
+    return msg
+
+person = ['Ivan ', 2900, 2500]
+
+print(caloric_calculator(*person))
+print(caloric_calculator('Vova ', 1900, 2500))
+
+def some(*args):
+    result = 0
+    for a in args:
+        result += a
+    return result
+print(some(10, 22, 23, 15))
+
+def some(*args):
+    result = 10
+    for a in args:
+        a + 10
+    return a
+print(some(10, 22, 23, 15))
+
